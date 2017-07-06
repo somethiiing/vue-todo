@@ -1,60 +1,45 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1></h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <create-todo v-on:create-todo="createTodo"></create-todo>
+    <todo-list v-bind:todos="todos"></todo-list>
   </div>
 </template>
 
 <script>
+import CreateTodo from './components/CreateTodo.vue';
+import TodoList from './components/TodoList.vue';
+
 export default {
   name: 'app',
+  components: {
+    CreateTodo,
+    TodoList,
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      todos: [{
+        title: 'Todo A',
+        project: 'Project A',
+        done: false
+      }, {
+        title: 'Todo B',
+        project: 'Project B',
+        done: false
+      }, {
+        title: 'Todo C',
+        project: 'Project C',
+        done: false
+      }]
+    }
+  },
+  methods: {
+    createTodo(note) {
+      console.log(note);
+      this.todos.push(note)
     }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
