@@ -11,7 +11,7 @@
 
 ##Screenshot
 
-![alt tag](./vueTodoSS1,png)
+![alt tag](https://raw.github.com/somethiiing/vueTodo/master/vueTodoSS1,png)
 
 
 ## Setup
