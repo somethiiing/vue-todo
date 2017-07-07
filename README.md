@@ -2,16 +2,16 @@
 
 > vue todo app
 
-##Features
+## Features
 * Adding/Removing/Editing tasks.
 * Tooltips when hovering icons.
 * Completing/Uncompleting a task.
 * Reset button.
 
 
-##Screenshot
+## Screenshot
 
-![alt tag](https://raw.github.com/somethiiing/vueTodo/master/vueTodoSS1,png)
+![alt tag](https://github.com/somethiiing/vue-todo/blob/master/vueTodoSS1.png)
 
 
 ## Setup
