@@ -2,10 +2,20 @@
 
 > vue todo app
 
-## Build Setup
+##Features
+* Adding/Removing/Editing tasks.
+* Tooltips when hovering icons.
+* Completing/Uncompleting a task.
+* Reset button.
 
-``` bash
-# install dependencies
+
+##Screenshot
+
+![alt tag](./vueTodoSS1,png)
+
+
+## Setup
+
 npm install
 
 # serve with hot reload at localhost:8080
