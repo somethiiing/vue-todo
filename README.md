@@ -2,6 +2,8 @@
 
 > vue todo app
 
+[demo](https://somethiiing.github.io/vue-todo)
+
 ## Features
 * Adding/Removing/Editing tasks.
 * Tooltips when hovering icons.
